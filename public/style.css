@@ -1,0 +1,54 @@
+#app {
+  margin: 3rem;
+  font-family: "Courier New", Courier, monospace;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+nav a.selected {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  background-color: rgb(183, 216, 225);
+}
+
+#things,
+#header,
+#users {
+  display: grid;
+  align-content: space-evenly;
+  grid-template-columns: 10rem 20rem 10rem 4rem;
+}
+#things > *,
+#users > * {
+  margin: 1rem;
+}
+#ranking {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#ranking > * {
+  margin: 4px;
+}
+
+#header {
+  text-align: center;
+  font-weight: bold;
+}
+
+#users > button {
+  width: 3rem;
+  height: 3rem;
+}
